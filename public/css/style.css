@@ -114,7 +114,8 @@ img {
 }
 
 .enter-button {
-    background-color: var(--button-color);
+    /* background-color: var(--button-color); */
+    background-color: #000000;
     border: none;
     color: white;
     padding: 1em;
