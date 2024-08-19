@@ -9,7 +9,7 @@
 <link href="/css/style.css" rel="stylesheet"/>
 </head>
 <body>
-<header>
+<header class="headwithlogo">
 <nav>
 <img alt="Company Logo" class="logo" src="https://framerusercontent.com/images/WMRxA8ILikYsnAeCQ6qTbyfitTo.png"/>
 <!-- Add your logo image here -->
@@ -26,159 +26,178 @@
 </header>
 <main>
 <section class="table-section">
-<h2>شركة مصنع جار الخليج للصناعة - بانيوهات متنوعة</h2>
-<button class="button-17" onclick="addItem('table1')">Add Item</button>
-<button class="button-17" onclick="removeItem('table1')">Remove Item</button><br/><table class="styled-table" id="table1">
-<thead>
-<tr>
-<th>اسم الصنف</th>
-<th>رقم الصنف</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>بانيو عادي المنيوم 170/70 جوانب اكريلك يمين</td>
-<td>
-<span id="item170">04-0458</span>
-<button onclick="copyToClipboard('item170')">Copy</button>
-</td>
-</tr>
-<tr>
-<td>بانيو عادي المنيوم 170/70 جوانب اكريلك يسار</td>
-<td>
-<span id="item171">04-0458</span>
-<button onclick="copyToClipboard('item171')">Copy</button>
-</td>
-</tr>
-<tr>
-<td>بانيو عادي المنيوم 150/70 جوانب اكريلك يسار</td>
-<td>
-<span id="item172">04-0457</span>
-<button onclick="copyToClipboard('item172')">Copy</button>
-</td>
-</tr>
-<tr>
-<td>بانيو كلاسيك 170/80 بيضاوي نحيف</td>
-<td>
-<span id="item173">04-0471</span>
-<button onclick="copyToClipboard('item173')">Copy</button>
-</td>
-</tr>
-</tbody>
-</table>
-</section>
+
+
+  <div class="btn-withname">
+
+    <h2 class="arabicgulf">شركة مصنع جار الخليج للصناعة - بانيوهات متنوعة</h2>
+    <button class="button-17" onclick="addItem('table1')">Add Item</button>
+    <button class="button-17" onclick="removeItem('table1')">Remove Item</button><br/><table class="styled-table" id="table1">
+    <thead>
+    <tr>
+    <th>اسم الصنف</th>
+    <th>رقم الصنف</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>بانيو عادي المنيوم 170/70 جوانب اكريلك يمين</td>
+    <td>
+    <span id="item170">04-0458</span>
+    <button onclick="copyToClipboard('item170')">Copy</button>
+    </td>
+    </tr>
+    <tr>
+    <td>بانيو عادي المنيوم 170/70 جوانب اكريلك يسار</td>
+    <td>
+    <span id="item171">04-0458</span>
+    <button onclick="copyToClipboard('item171')">Copy</button>
+    </td>
+    </tr>
+    <tr>
+    <td>بانيو عادي المنيوم 150/70 جوانب اكريلك يسار</td>
+    <td>
+    <span id="item172">04-0457</span>
+    <button onclick="copyToClipboard('item172')">Copy</button>
+    </td>
+    </tr>
+    <tr>
+    <td>بانيو كلاسيك 170/80 بيضاوي نحيف</td>
+    <td>
+    <span id="item173">04-0471</span>
+    <button onclick="copyToClipboard('item173')">Copy</button>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </section>
+
+
+  </div>
+
 <section class="table-section">
-<h2>شركة المتحد الخليجي - أصناف متنوعة</h2>
-<button class="button-17" onclick="addItem('table2')">Add Item</button>
-<button class="button-17" onclick="removeItem('table2')">Remove Item</button><br/><table class="styled-table" id="table2">
-<thead>
-<tr>
-<th>اسم الصنف</th>
-<th>رقم الصنف</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>جلبة ذكر سن نحاس 3/4 حار</td>
-<td>
-<span id="item174">11-0463</span>
-<button onclick="copyToClipboard('item174')">Copy</button>
-</td>
-</tr>
-<tr>
-<td>جلبة ذكر سن نحاس 1 حار</td>
-<td>
-<span id="item175">11-0431</span>
-<button onclick="copyToClipboard('item175')">Copy</button>
-</td>
-</tr>
-<tr>
-<td>كوع سن داخلي نحاس 1*1 حار</td>
-<td>
-<span id="item176">11-0828</span>
-<button onclick="copyToClipboard('item176')">Copy</button>
-</td>
-</tr>
-<tr>
-<td>تي عادي 4/3 حار</td>
-<td>
-<span id="item177">11-0062</span>
-<button onclick="copyToClipboard('item177')">Copy</button>
-</td>
-</tr>
-<tr>
-<td>كوع عادي 4/3 -90 حار</td>
-<td>
-<span id="item178">11-0712</span>
-<button onclick="copyToClipboard('item178')">Copy</button>
-</td>
-</tr>
-<tr>
-<td>طبة عادي 2/1-1 حار</td>
-<td>
-<span id="item179">11-0552</span>
-<button onclick="copyToClipboard('item179')">Copy</button>
-</td>
-</tr>
-<tr>
-<td>جلبة ذكر سن نحاس 4/3 حار</td>
-<td>
-<span id="item180">11-0436</span>
-<button onclick="copyToClipboard('item180')">Copy</button>
-</td>
-</tr>
-</tbody>
-</table>
-</section>
+
+  <div class="btn-withname">
+    <h2 class="arabicgulf">شركة المتحد الخليجي - أصناف متنوعة</h2>
+    <button class="button-17" onclick="addItem('table2')">Add Item</button>
+    <button class="button-17" onclick="removeItem('table2')">Remove Item</button><br/><table class="styled-table" id="table2">
+    <thead>
+    <tr>
+    <th>اسم الصنف</th>
+    <th>رقم الصنف</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>جلبة ذكر سن نحاس 3/4 حار</td>
+    <td>
+    <span id="item174">11-0463</span>
+    <button onclick="copyToClipboard('item174')">Copy</button>
+    </td>
+    </tr>
+    <tr>
+    <td>جلبة ذكر سن نحاس 1 حار</td>
+    <td>
+    <span id="item175">11-0431</span>
+    <button onclick="copyToClipboard('item175')">Copy</button>
+    </td>
+    </tr>
+    <tr>
+    <td>كوع سن داخلي نحاس 1*1 حار</td>
+    <td>
+    <span id="item176">11-0828</span>
+    <button onclick="copyToClipboard('item176')">Copy</button>
+    </td>
+    </tr>
+    <tr>
+    <td>تي عادي 4/3 حار</td>
+    <td>
+    <span id="item177">11-0062</span>
+    <button onclick="copyToClipboard('item177')">Copy</button>
+    </td>
+    </tr>
+    <tr>
+    <td>كوع عادي 4/3 -90 حار</td>
+    <td>
+    <span id="item178">11-0712</span>
+    <button onclick="copyToClipboard('item178')">Copy</button>
+    </td>
+    </tr>
+    <tr>
+    <td>طبة عادي 2/1-1 حار</td>
+    <td>
+    <span id="item179">11-0552</span>
+    <button onclick="copyToClipboard('item179')">Copy</button>
+    </td>
+    </tr>
+    <tr>
+    <td>جلبة ذكر سن نحاس 4/3 حار</td>
+    <td>
+    <span id="item180">11-0436</span>
+    <button onclick="copyToClipboard('item180')">Copy</button>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </section>
+
+  </div>
+
 <section class="table-section">
-<h2>شركة صفا - جلبة ترحيل</h2>
-<button class="button-17" onclick="addItem('table3')">Add Item</button>
-<button class="button-17" onclick="removeItem('table3')">Remove Item</button><br/><table class="styled-table" id="table3">
-<thead>
-<tr>
-<th>اسم الصنف</th>
-<th>رقم الصنف</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>جلبة ترحيل 3 سم</td>
-<td>
-<span id="item181">13-0004</span>
-<button onclick="copyToClipboard('item181')">Copy</button>
-</td>
-</tr>
-<tr>
-<td>جلبة ترحيل طويلة</td>
-<td>
-<span id="item182">13-0010</span>
-<button onclick="copyToClipboard('item182')">Copy</button>
-</td>
-</tr>
-<tr>
-<td>جلبة ترحيل 9 سم</td>
-<td>
-<span id="item183">13-0006</span>
-<button onclick="copyToClipboard('item183')">Copy</button>
-</td>
-</tr>
-<tr>
-<td>جلبة ترحيل 5 سم</td>
-<td>
-<span id="item184">13-0005</span>
-<button onclick="copyToClipboard('item184')">Copy</button>
-</td>
-</tr>
-<tr>
-<td>جلبة ترحيل 10 سم</td>
-<td>
-<span id="item185">13-0026</span>
-<button onclick="copyToClipboard('item185')">Copy</button>
-</td>
-</tr>
-</tbody>
-</table>
-</section>
+
+  <div class="btn-withname">
+
+    <h2 class="arabicgulf">شركة صفا - جلبة ترحيل</h2>
+    <button class="button-17" onclick="addItem('table3')">Add Item</button>
+    <button class="button-17" onclick="removeItem('table3')">Remove Item</button><br/><table class="styled-table" id="table3">
+    <thead>
+    <tr>
+    <th>اسم الصنف</th>
+    <th>رقم الصنف</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>جلبة ترحيل 3 سم</td>
+    <td>
+    <span id="item181">13-0004</span>
+    <button onclick="copyToClipboard('item181')">Copy</button>
+    </td>
+    </tr>
+    <tr>
+    <td>جلبة ترحيل طويلة</td>
+    <td>
+    <span id="item182">13-0010</span>
+    <button onclick="copyToClipboard('item182')">Copy</button>
+    </td>
+    </tr>
+    <tr>
+    <td>جلبة ترحيل 9 سم</td>
+    <td>
+    <span id="item183">13-0006</span>
+    <button onclick="copyToClipboard('item183')">Copy</button>
+    </td>
+    </tr>
+    <tr>
+    <td>جلبة ترحيل 5 سم</td>
+    <td>
+    <span id="item184">13-0005</span>
+    <button onclick="copyToClipboard('item184')">Copy</button>
+    </td>
+    </tr>
+    <tr>
+    <td>جلبة ترحيل 10 سم</td>
+    <td>
+    <span id="item185">13-0026</span>
+    <button onclick="copyToClipboard('item185')">Copy</button>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </section>
+
+  </div>
+
 </main>
 <script src="/js/scripts.js"></script>
 <!-- <script src="/js/scripts_corrected.js"></script> -->

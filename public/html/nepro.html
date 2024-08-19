@@ -9,7 +9,7 @@
 <link href="/css/style.css" rel="stylesheet"/>
 </head>
 <body>
-<header>
+<header class="headwithlogo">
 <nav>
 <img alt="Company Logo" class="logo" src="https://framerusercontent.com/images/WMRxA8ILikYsnAeCQ6qTbyfitTo.png"/> <!-- Add your logo image here -->
 <ul>
@@ -17,64 +17,87 @@
 <li><a href="3p.html">3P</a></li>
 <li><a href="khalej.html">Khallej</a></li>
 <li><a href="nepro.html">Nepro</a></li>
-<li><a href="collection.html">Other</a></li>
+<li><a href="Other.html">Other</a></li>
 <li><a href="page5.html">Page 5</a></li>
 <li><a href="page6.html">Page 6</a></li>
 </ul>
 </nav>
 </header>
 <section class="table-section">
-<h2>مواسير نيبرو</h2>
-<button onclick="addItem('table1')">Add Item</button><button onclick="removeItem('table1')">Remove Item</button><br/><table class="styled-table" id="table1">
-<thead>
-<tr>
-<th>اسم الصنف</th>
-<th>رقم الصنف</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ماسورة رمادي جدول 80 بارد مقاس 4</td>
-<td>
-<span id="item1">12-0466</span>
-<button onclick="copyToClipboard('item1')">Copy</button>
-</td>
-</tr>
-<tr>
-<td>ماسورة رمادي جدول 80 بارد مقاس 3</td>
-<td>
-<span id="item2">12-0458</span>
-<button onclick="copyToClipboard('item2')">Copy</button>
-</td>
-</tr>
-<tr>
-<td>ماسورة ابيض جدول 40 مقاس 1</td>
-<td>
-<span id="item3">12-0462</span>
-<button onclick="copyToClipboard('item3')">Copy</button>
-</td>
-</tr>
-<tr>
-<td>ماسورة ابيض جدول 40 مقاس 8</td>
-<td>
-<span id="item4">12-0472</span>
-<button onclick="copyToClipboard('item4')">Copy</button>
-</td>
-</tr>
-<tr>
-<td>ماسورة ابيض جدول 40 مقاس 4</td>
-<td>
-<span id="item5">12-0466</span>
-<button onclick="copyToClipboard('item5')">Copy</button>
-</td>
-</tr>
-</tbody>
-</table>
-</section>
+
+  <div class="btn-withname">
+
+    <h2>مواسير نيبرو</h2>
+    <button class="button-17" onclick="addItem('table1')">إضافة</button
+      ><button class="button-17" onclick="removeItem('table1')">حذف</button
+      ><br />
+      <br />
+    
+    <br/>
+    <table class="styled-table" id="table1">
+    <thead>
+    <tr>
+    <th>اسم الصنف</th>
+    <th>رقم الصنف</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>ماسورة رمادي جدول 80 بارد مقاس 4</td>
+    <td>
+    <span id="item1">12-0466</span>
+    <button onclick="copyToClipboard('item1')">Copy</button>
+    </td>
+    </tr>
+    <tr>
+    <td>ماسورة رمادي جدول 80 بارد مقاس 3</td>
+    <td>
+    <span id="item2">12-0458</span>
+    <button onclick="copyToClipboard('item2')">Copy</button>
+    </td>
+    </tr>
+    <tr>
+    <td>ماسورة ابيض جدول 40 مقاس 1</td>
+    <td>
+    <span id="item3">12-0462</span>
+    <button onclick="copyToClipboard('item3')">Copy</button>
+    </td>
+    </tr>
+    <tr>
+    <td>ماسورة ابيض جدول 40 مقاس 8</td>
+    <td>
+    <span id="item4">12-0472</span>
+    <button onclick="copyToClipboard('item4')">Copy</button>
+    </td>
+    </tr>
+    <tr>
+    <td>ماسورة ابيض جدول 40 مقاس 4</td>
+    <td>
+    <span id="item5">12-0466</span>
+    <button onclick="copyToClipboard('item5')">Copy</button>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </section>
+  </div>
+
 <!-- اصناف اخرى -->
 <section class="table-section">
-<h2>أصناف متنوعة</h2>
-<button onclick="addItem('table2')">Add Item</button><button onclick="removeItem('table2')">Remove Item</button><br/><table class="styled-table" id="table2">
+
+  <div class="btn-withname">
+
+
+    <h2>أصناف متنوعة</h2>
+
+    <button class="button-17" onclick="addItem('table2')">إضافة</button
+      ><button class="button-17" onclick="removeItem('table2')">حذف</button
+      >
+      <br />
+      <br />
+
+<br/>
+<table class="styled-table" id="table2">
 <thead>
 <tr>
 <th>اسم الصنف</th>
@@ -176,6 +199,10 @@
 </tbody>
 </table>
 </section>
+
+
+  </div>
+
 <script src="/js/scripts.js"></script>
 <!-- <script src="/js/scripts_corrected.js"></script> -->
 </html>

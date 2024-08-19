@@ -2,25 +2,42 @@
 :root {
     --primary-color: #3498db;
     --secondary-color: #2ecc71;
-    --background-color: #ecf0f1;
+    --background-color: #000000;
     --text-color: #2c3e50;
     --button-color: #e74c3c;
+    --background-color2: #000000;
 
     --table-border-color: #bdc3c7;
     --table-header-bg: #34495e;
     --table-header-color: #ecf0f1;
 }
 
+.headwithlogo {
+  /* display: flex; */
+  justify-content: center;
+  /* align-items: center; */
+  background-color: #000000;
+  padding: 1em 0;
+}
+
 .logo {
+  width: 50px;
+  text-align: center;
+  justify-items: first baseline;
+  justify-items: start;
+}
+
+/* .logo {
   width: 50px;
   height: 50px; Adjust the logo size as needed
   margin-right: 2em;
   padding-left: 10px;
-  margin-bottom: -15px;
+  margin-bottom: -15px; */
 }
 body {
     font-family: Arial, sans-serif;
     background-color: var(--background-color);
+
     color: var(--text-color);
     margin: 0;
     padding: 0;
@@ -116,6 +133,7 @@ img {
 
 .table-section {
   margin: 2em;
+  
 }
 
 h2 {
@@ -126,30 +144,48 @@ h2 {
 
 .styled-table {
   width: 100%;
+  
+  /* border-radius: 24px; */
+  /* display: table; */
+  /* display: flexbox; */
+  justify-content: center;
+  /* align-items: center; */
   border-collapse: collapse;
   margin-bottom: 2em;
+
 }
 
 .styled-table th,
 .styled-table td {
-  padding: 1em;
+  
+  text-align: inherit; 
+  background-color: rgba(0, 0, 0, 0.05);
+  display: table-cell;
+ 
+  padding: 2em;
   border: 1px solid var(--table-border-color);
   text-align: left;
 }
 
 .styled-table th {
-  background-color: var(--table-header-bg);
+  
   background-color: 007eff;
   color: var(--table-header-color);
 }
 
 .styled-table tr:nth-child(even) {
-  background-color: #f2f2f2;
+  
+  /* background-color: #f2f2f2;
+  background-color: #ffffff; */
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+    /* display: block; */
 }
 
 .styled-table tr:hover {
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
+  background-color: rgba(39, 172, 249, 0.35);
   color: white;
+  
 }
 
 
@@ -232,8 +268,127 @@ h2 {
 .arabicgulf {
   /* background-color: #f1c40f; */
   /* color: white; */
-  --primary-color: #3498db;
+  /* --primary-color: #3498db; */
+  color: black;
   text-align: center;
-  padding: 1em;
+  /* padding: 1em; */
 }
 
+
+
+/* .tbh {
+  order-radius: 3px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+} */
+
+/* 
+.btn-withname {
+  /* background-color: #3498db; */
+  /* color: rgb(69, 69, 69);
+  padding: 1em;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s; */
+  border-radius: 5px;
+  text-align: center;
+  /* display: grid; */
+  /* display: inline-table; */
+} */
+
+
+
+
+/* +++++++++++++++++++++++++++++++++ */
+
+
+
+/* Centering the container */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ececec;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling the container */
+.btn-withname {
+  /* background: rgba(255, 255, 255, 0.8); Semi-transparent white */
+  color: rgb(69, 69, 69);
+  background-color: #092037;
+
+  justify-content: center;
+  margin: 0;
+  align-items: center;
+  color: #f2f2f2;
+  
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+  text-align: center;
+  
+  border: 1px solid rgba(255, 255, 255, 0.6); /* Subtle border */
+  backdrop-filter: blur(10px); /* Background blur effect */
+  
+}
+
+/* Styling the headings */
+.arabicgulf {
+  font-size: 1.6rem;
+  color: #ffffff; /* A bold color to match the design */
+  margin-bottom: 15px;
+}
+
+.name-upb {
+  font-size: 1.3rem;
+  color: #c6c6c6;
+  margin-bottom: 25px;
+}
+
+/* Styling the buttons with transparency */
+.button-17 {
+  background-color: rgba(0, 123, 255, 0.2); /* Transparent background */
+  color: #007bff; /* Eye-catching text color */
+  padding: 12px 25px;
+  border: 2px solid #007bff; /* Solid border */
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.button-17:hover {
+  background-color: rgba(0, 123, 255, 0.6); /* Stronger background on hover */
+  color: white; /* Text color changes on hover */
+  transform: scale(1.05); /* Hover effect */
+}
+
+/* For smaller screens */
+@media (max-width: 600px) {
+  .btn-withname {
+    padding: 20px;
+    max-width: 320px;
+  }
+  
+  .arabicgulf {
+    font-size: 1.3rem;
+  }
+  
+  .name-upb {
+    font-size: 1.1rem;
+  }
+  
+  .button-17 {
+    padding: 10px 18px;
+    font-size: 1rem;
+  }
+}
