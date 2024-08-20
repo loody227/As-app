@@ -159,16 +159,16 @@ h2 {
   margin-bottom: 2em;
 
 }
-
+/* تغير الحواف للجدول */
 .styled-table th,
 .styled-table td {
   
   text-align: inherit; 
   background-color: rgba(0, 0, 0, 0.05);
-  display: table-cell;
+  /* display: table-cell; */
  
   padding: 2em;
-  border: 1px solid var(--table-border-color);
+  /* border: 1px solid var(--table-border-color); */
   text-align: left;
 }
 
@@ -415,6 +415,7 @@ body {
 .table-section {
   margin: 24em;
   
+  
 }
 
 .styled-table {
@@ -431,3 +432,9 @@ body {
   text-align: center; /* جعل النصوص في منتصف الخلايا */
 } */
 
+
+@media print {
+  table { width: 100%; border-collapse: collapse; }
+  th, td { border: 1px solid #000; padding: 10px; text-align: left; }
+  th { background-color: #007eff; color: white; }
+}
